@@ -215,7 +215,7 @@ runs:
           RASA_VERSION=${{ inputs.rasa_version }}
         fi
 
-        echo "RASA_IMAGE=rasa/rasa:${RASA_VERSION}" >> $GITHUB_ENV
+        echo "RASA_IMAGE=rasa/rasa:${RASA_VERSION}-full" >> $GITHUB_ENV
 
     - name: Data Validation
       shell: bash
